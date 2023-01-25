@@ -10,12 +10,17 @@ body {
     background-color: var(--bg);
 }
 
-h1 {
+.title.box {
+    width: 100%;
+}
+
+.title-box span {
     font-size: 5rem;
     color: white;
     text-align: center;
     padding-top: 2rem;
     text-shadow: 19px 60px 80px rgba(0, 0, 0, 0.29);
+    font-family: 'Fredoka One', cursive;
 }
 
 .box {
@@ -35,6 +40,8 @@ h1 {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box-3 {
@@ -57,7 +64,40 @@ h1 {
     transform: scale(98%);
 }
 
-h1:hover {
-    transform: scale(105%);
-    cursor: pointer;
+
+.title-box {
+    animation: title-animation 1s;
+    animation-timing-function: cubic-bezier(0.1, 0, 0.2, 0);
+}
+
+@keyframes title-animation {
+
+    0% {
+        gap: 3rem;
+    }
+
+    10% {
+        gap: 3rem;
+    }
+
+    20% {
+        gap: 2rem;
+    }
+
+    40% {
+        gap: 1rem;
+    }
+
+    60% {
+        gap: 0rem;
+    }
+
+    80% {
+        gap: 0.3rem;
+    }
+
+    90% {
+        gap: 0rem;
+    }
+
 }
