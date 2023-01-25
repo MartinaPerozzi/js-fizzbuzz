@@ -2,7 +2,7 @@
 const boxElement = document.querySelector(".box-contain");
 console.log(boxElement);
 
-// Creo un ciclo: fino che i = 100: 
+// Creo un ciclo: fino che i <= 100: 
 
 for (let i = 1; i <= 100; i++) {
 
