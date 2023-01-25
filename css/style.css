@@ -1,0 +1,25 @@
+:root {
+    --bg: color:#083b4c;
+    --box-3: color:#0cd6a1;
+    --box-5: color:#ffd166;
+    --box-5-3: color:#f0466f;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.box-3 {
+    background-color: var(--box-3);
+}
+
+.box-5 {
+    background-color: var(--box-5);
+}
+
+.box-5-3 {
+    background-color: var(--box-5-3);
+}
