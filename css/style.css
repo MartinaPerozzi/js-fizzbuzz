@@ -15,6 +15,7 @@ h1 {
     color: white;
     text-align: center;
     padding-top: 2rem;
+    text-shadow: 19px 60px 80px rgba(0, 0, 0, 0.29);
 }
 
 .box {
@@ -27,6 +28,7 @@ h1 {
     align-items: center;
     font-size: 1.2rem;
     box-shadow: 19px 60px 80px rgba(0, 0, 0, 0.29);
+    cursor: pointer;
 }
 
 .box-contain {
@@ -49,4 +51,13 @@ h1 {
 
 .box-empty {
     background-color: var(--box-empty);
+}
+
+.box:hover {
+    transform: scale(98%);
+}
+
+h1:hover {
+    transform: scale(105%);
+    cursor: pointer;
 }
