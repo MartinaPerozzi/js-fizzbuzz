@@ -21,6 +21,7 @@ body {
     padding-top: 2rem;
     text-shadow: 19px 60px 80px rgba(0, 0, 0, 0.29);
     font-family: 'Fredoka One', cursive;
+    cursor: pointer;
 }
 
 .box {
