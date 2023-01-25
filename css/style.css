@@ -1,15 +1,38 @@
 :root {
-    --bg: color:#083b4c;
-    --box-3: color:#0cd6a1;
-    --box-5: color:#ffd166;
-    --box-5-3: color:#f0466f;
+    --bg: #083b4c;
+    --box-3: #0cd6a1;
+    --box-5: #ffd166;
+    --box-5-3: #f0466f;
+    --box-empty: #1389b2;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     border-radius: 1rem;
     padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 19px 60px 80px rgba(0, 0, 0, 0.29);
+}
+
+.box-contain {
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .box-3 {
@@ -22,4 +45,8 @@
 
 .box-5-3 {
     background-color: var(--box-5-3);
+}
+
+.box-empty {
+    background-color: var(--box-empty);
 }
