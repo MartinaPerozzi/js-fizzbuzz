@@ -22,8 +22,10 @@ for (let i = 0; i = 3; i++) {
     if (i % 3 == 0) {
         boxItem.classList.add("box-3");
     } else if (i % 5 == 0) {
-        boxItem.classList.remove("box-3");
         boxItem.classList.add("box-5");
+    } else if ((i % 3 == 0) && (i % 5 == 0)) {
+        boxItem.classList.add("box-5-3");
+
     }
 }
 
